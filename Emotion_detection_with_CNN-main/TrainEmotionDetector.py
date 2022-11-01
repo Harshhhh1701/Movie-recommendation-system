@@ -12,7 +12,7 @@ validation_data_gen = ImageDataGenerator(rescale=1./255)
 
 # Preprocess all test images
 train_generator = train_data_gen.flow_from_directory(
-        'data/train',
+        'D:/Emotion_detection_with_CNN-main/Emotion_detection_with_CNN-main/data/train',
         target_size=(48, 48),
         batch_size=64,
         color_mode="grayscale",
@@ -20,7 +20,7 @@ train_generator = train_data_gen.flow_from_directory(
 
 # Preprocess all train images
 validation_generator = validation_data_gen.flow_from_directory(
-        'data/test',
+        'D:/Emotion_detection_with_CNN-main/Emotion_detection_with_CNN-main/data/test',
         target_size=(48, 48),
         batch_size=64,
         color_mode="grayscale",
